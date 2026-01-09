@@ -79,8 +79,8 @@
 
 // ]));
 
-// Q3 above 18:10
+// Q3 above 
 
-// Q4. Promises below
+// Q4. Promises below 20:00 videos
 
 
