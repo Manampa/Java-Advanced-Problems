@@ -82,8 +82,11 @@
 // Q3 above 
 
 // Q4. Promises below 20:00 videos 1st video done
- function postsByUser(userId) {
-    fetch("https://jsonplaceholder.typicode.com/posts")
+ async function postsByUser(userId) {
+     let result = await fetch("https://jsonplaceholder.typicode.com/posts")
+     console.log(result)
+
+
     console.log(userId)
 
  }
