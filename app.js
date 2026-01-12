@@ -82,5 +82,11 @@
 // Q3 above 
 
 // Q4. Promises below 20:00 videos 1st video done
+ function postsByUser(userId) {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+    console.log(userId)
+
+ }
+ postsByUser(4);
 
 
