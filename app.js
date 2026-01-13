@@ -81,27 +81,43 @@
 
 // Q3 above 
 
-// Q4. Promises below 24:50 videos 1st video done
- async function postsByUser(userId) {
-     const promise = await fetch("https://jsonplaceholder.typicode.com/posts")
-     const result = await promise.json()
-     const posts = result.filter(element => element.userId === userId)
-    //  result.filter (post => post === {userId: 4});
-     console.log(posts)
+// Q4. Promises below 24:50 
+// async function postsByUser(userId) {
+//     let promise = await fetch("https://jsonplaceholder.typicode.com/posts")
+//     console.log(await promise.json())
+// }
+// postsByUser(4);
 
+// Q4. Promises above
+// Q5. Below
 
-    //  .then((promise) => {promise.json(); 
-    //  })
-    //  .then((data) =>{
-    //     console.log(data);
-    //     promise.innerHTML = promise.email
-    //  })
+//  async function postsByUser(userId) {
+    //      const promise = await fetch("https://jsonplaceholder.typicode.com/posts")
+    //      const result = await promise.json()
+    //      const posts = result.filter(element => element.userId === userId)
+    //      console.log(posts)
+    //  }
+    //  postsByUser(4);
+    
+// Q5. Above
+    
+    
+// Q6. First 6 incomplete Todos below
+async function firstSixIncomplete(userId) {
+    const promise = await fetch("https://jsonplaceholder.typicode.com/todos");
+    const result = await promise.json()
+    const incompleteTasks = result.filter(elem => !elem.completed).slice(0,6);
+    console.log(incompleteTasks);
 
+}
+firstSixIncomplete(6);
 
-
-    // console.log(userId)
-
- }
- postsByUser(4);
-
-
+// Q6. First 6 incomplete Todos above 29:35
+    
+    
+    
+    
+    
+    
+    
+    
