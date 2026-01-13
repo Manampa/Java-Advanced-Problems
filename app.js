@@ -81,13 +81,25 @@
 
 // Q3 above 
 
-// Q4. Promises below 20:00 videos 1st video done
+// Q4. Promises below 24:50 videos 1st video done
  async function postsByUser(userId) {
-     let result = await fetch("https://jsonplaceholder.typicode.com/posts")
-     console.log(result)
+     const promise = await fetch("https://jsonplaceholder.typicode.com/posts")
+     const result = await promise.json()
+     const posts = result.filter(element => element.userId === userId)
+    //  result.filter (post => post === {userId: 4});
+     console.log(posts)
 
 
-    console.log(userId)
+    //  .then((promise) => {promise.json(); 
+    //  })
+    //  .then((data) =>{
+    //     console.log(data);
+    //     promise.innerHTML = promise.email
+    //  })
+
+
+
+    // console.log(userId)
 
  }
  postsByUser(4);
